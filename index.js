@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const port = 4700 || process.env.PORT
+
 const app = express();
 
 const identificationRouters = require("./src/routes/IdentificationRouters");
@@ -16,6 +18,7 @@ app.use((req, res, next) => {
 
 app.use("/identification", identificationRouters);
 
-app.listen(4700, () => {
+app.listen(port, () => {
   console.log("port 5000")
-}); 
+});
+
