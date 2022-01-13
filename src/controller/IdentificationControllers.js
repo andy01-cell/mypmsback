@@ -179,7 +179,7 @@ exports.analyzer = async (req, res, next) => {
   }
 
   console.log("totalbobot :", totalbobot);
-  console.log("predikis :", test);
+  console.log("prediksi :", test);
   console.log("bobot => ", bobot);
 
   //   svm.predict_probability_async/
